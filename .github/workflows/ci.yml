@@ -39,4 +39,4 @@ jobs:
       # cd frontend
       # npm install --ignore-scripts
       # cd ..
-      #         run: ${GITHUB_WORKSPACE}/sl analyze --wait --app juice-shop-lab --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --js 
+      #         run: ${GITHUB_WORKSPACE}/sl analyze --wait --app juice-shop-lab --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} --js --cpg . -- --include-tests --include-configs
